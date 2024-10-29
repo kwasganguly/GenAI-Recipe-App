@@ -6,7 +6,7 @@ from PIL import Image
 import os
 os.environ['CURL_CA_BUNDLE'] = ''
 
-openai.api_key = "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"
+openai.api_key = st.secrets['OPENAI_API_KEY']
 
 image = Image.open('images/banner.jpg')
 st.image(image, use_column_width=True)
